@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titlebar_bg"
+        type="drawable">@color/colorPrimary
+    </item>
+    <item name="titlebar_height"
+        type="dimen">@dimen/dp_48
+    </item>
+    <item name="main_color"
+        type="color">@color/colorPrimary
+    </item>
+
+</resources>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_height"
+    android:splitMotionEvents="false"
+    android:background="@drawable/titlebar_bg">
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:id="@+id/title_txt"
+        android:layout_height="@dimen/titlebar_height"
+        android:layout_centerInParent="true"
+        android:maxWidth="@dimen/dp_260"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        style="@style/titlebar_title_text_style"/>
+
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/title_left_image"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/icon_actionbar_arrow"
+        style="@style/titlebar_image_button_style"/>
+
+    <ImageButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/title_right_image"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@style/titlebar_image_button_style"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/title_right_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="visible"
+        style="@style/titlebar_text_view_style"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/title_left_text"
+        android:visibility="invisible"
+        style="@style/titlebar_text_view_style"/>
+
+</RelativeLayout>
